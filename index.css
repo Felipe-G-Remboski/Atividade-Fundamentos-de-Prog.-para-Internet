@@ -1,0 +1,35 @@
+body {
+    background-color: #836FFF ;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+form {
+    text-align: center;
+}
+
+.input-container {
+  position: relative;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  height: auto;
+  min-height: 30px; /* Altura mínima do campo de entrada */
+}
+
+@media print {
+            textarea {
+                resize: none;
+                overflow: hidden;
+                height: auto;
+                min-height: 30px; /* Altura mínima do campo de entrada */
+            }
+            .no-print {
+                display: none;
+            }
+        }

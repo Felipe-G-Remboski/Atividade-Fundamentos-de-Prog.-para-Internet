@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faça seu curriculo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="function.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <form action="processar.php" method="post">
+        <div class="input-container">
+            <label id="nome"> Nome: </label> </br>
+            <textarea type="text" name="nome" id="nome" ></textarea>
+        </div>
+
+        <div class="input-container">
+            <label id="sobrenome"> Sobrenome: </label></br>
+            <textarea type="text" name="sobrenome" id="sobrenome" ></textarea>
+        </div>
+        
+        <div class="input-container">
+            <label id="idade"> Idade: </label></br>
+            <textarea type="text" name="idade" id="idade" ></textarea>
+        </div>
+        
+        <div class="input-container">    
+            <label id="telefone"> Telefone: </label></br>
+            <textarea type="text" name="telefone" id="telefone" ></textarea>
+        </div>
+
+        <div class="input-container">
+            <label id="email"> Email: </label></br>
+            <textarea type="text" name="email" id="email" ></textarea>
+        </div>
+
+        <div class="input-container">
+            <label id="linkedin"> Link para linkedin: </label></br>
+            <textarea type="text" name="linkedin" id="linkedin" ></textarea>
+        </div>
+
+        <div class="input-container">
+            <div id="containerObjetivo">
+                <div>
+                    <label id="objetivo"> Objetivos: </label></br>
+                    <textarea type="text" name="objetivo[]"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class="no-print" type="button" value="Adicionar Campo" onclick="adicionarCampoObjetivo()">Adicionar Campo</button>
+
+        <div class="input-container">
+            <div id="containerExperiencia">
+                <div>
+                    <label id="experiencia"> Experiencias: </label></br>
+                    <textarea type="text" name="experiencia[]"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class="no-print" type="button" value="Adicionar Campo" onclick="adicionarCampoExperiencia()">Adicionar Campo</button>
+
+        <div class="input-container">
+            <div id="containerFormacao">
+                <div>
+                    <label id="formacao"> Formação: </label></br>
+                    <textarea type="text" name="formacao[]"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class="no-print" type="button" value="Adicionar Campo" onclick="adicionarCampoFormacao()">Adicionar Campo</button></br></br>
+
+        <button class="no-print" type="submit" value="Imprimir Curriculo" onclick="imprimirCurriculo()">Imprimir Curriculo</button>
+    </form>
+</body>
+</html>
